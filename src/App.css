@@ -1,42 +1,112 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root{
+  --main-text-color:#ffff;
+  --main-font-size:clamp(3rem, 10vw, 6rem)
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html{
+  font-family: euclidCircularB,ui-sans-serif,system-ui,-apple-system,
+  Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,
+  Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header{
+  height: 100vh;
+  border: 1px solid black;
+  /* background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  padding: 0 5rem;
 }
 
-.card {
-  padding: 2em;
+nav{
+  position: relative;
+  top: 0%;
+  height: 10vh;
+  width: 100%;
+  padding: 10px;
+  background-color:transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.logo{
+  /* color: var(--main-text-color); */
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 50%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
 }
+
+.nav-div-container{
+  border: 1px solid blue;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content:flex-end;
+}
+.register-support-holder{
+  width: 80%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.register-support-holder div:nth-child(2){
+  border: 1px solid #ffff;
+  height: 100%;
+  width:20%;
+  font-weight: 500;
+  border-radius: 32px;
+  margin-left: 2em;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menubar{
+  border: 1px solid green;
+  padding: 0.2em;
+  width: 10%;
+  margin-left: 2em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menubar div{
+  border: 1px solid black;
+  width: 50%;
+  height: 3px;
+  margin: 0.2em;
+  background-color: transparent;
+}
+/* .menubar div:nth-child(2){
+  border: 1px solid ;
+  width: 50%;
+  height: 3px;
+  background-color: transparent;
+} */
+
+.header_description h1{
+  /* color:var(--main-text-color); */
+  font-size: 2.5rem;
+  line-height: 3rem ;
+}
+
+/* .header_description p{
+  /* color: #ffff; 
+} 
+*/

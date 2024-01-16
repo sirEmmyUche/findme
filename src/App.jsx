@@ -13,7 +13,7 @@ function Root(){
       <Route path='/' element={<Home/>}/>
     </Routes>
   )
-}
+}  
 
 function App() {
     return < RouterProvider router={router}/>
