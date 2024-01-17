@@ -3,6 +3,8 @@ import {createBrowserRouter,
   Routes,
   Route,} from 'react-router-dom';
   import Home from "./pages/home";
+  import VisitorLayout from './layouts/visitors'
+  import AboutUs from './pages/about';
 import './App.css'
 
 const router = createBrowserRouter([{path:'*', Component:Root}]);
@@ -10,7 +12,10 @@ const router = createBrowserRouter([{path:'*', Component:Root}]);
 function Root(){
   return (
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route element={<VisitorLayout/>}>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<AboutUs/>}/>
+      </Route>
     </Routes>
   )
 }  

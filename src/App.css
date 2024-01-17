@@ -15,12 +15,12 @@ html{
   Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-header{
+.set-header{
   height: 100vh;
   border: 1px solid black;
-  /* background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg');
+  /* background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg'); */
   background-size: 100% 100%;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   padding: 0 5rem;
 }
 
@@ -110,3 +110,8 @@ nav{
   /* color: #ffff; 
 } 
 */
+
+footer{
+  height: 100vh;
+  background-color: aqua;
+}
