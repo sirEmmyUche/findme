@@ -14,7 +14,7 @@ useEffect(()=>{
 [params.name]
 )
 
-    return(
+    return( 
         <>
             <header className="set-header" style={
                 {

@@ -78,6 +78,7 @@ nav{
   border: 1px solid green;
   padding: 0.2em;
   width: 10%;
+  position:relative;
   margin-left: 2em;
   cursor: pointer;
   display: flex;
@@ -90,15 +91,22 @@ nav{
   border: 1px solid black;
   width: 50%;
   height: 3px;
-  margin: 0.2em;
+  margin: 3px 0;
   background-color: transparent;
 }
-/* .menubar div:nth-child(2){
-  border: 1px solid ;
-  width: 50%;
-  height: 3px;
-  background-color: transparent;
-} */
+.menubar div:nth-child(1){
+  position: absolute;
+  top:5;
+  transform:rotate(45deg)
+}
+.menubar div:nth-child(2){
+ display:none;
+ }
+ .menubar div:nth-child(3){
+  position: absolute;
+  top: 5;
+  transform:rotate(-45deg)
+ }
 
 .header_description h1{
   /* color:var(--main-text-color); */
