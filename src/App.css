@@ -1,3 +1,4 @@
+
 :root{
   --main-text-color:#ffff;
   --main-font-size:clamp(3rem, 10vw, 6rem)
@@ -18,7 +19,7 @@ html{
 .set-header{
   height: 100vh;
   border: 1px solid black;
-  /* background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg'); */
+  background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 0 5rem;
@@ -26,7 +27,7 @@ html{
 
 nav{
   position: relative;
-  top: 0%;
+  top: 1vh;
   height: 10vh;
   width: 100%;
   padding: 10px;
@@ -37,18 +38,18 @@ nav{
 }
 
 .logo{
-  /* color: var(--main-text-color); */
+  color: var(--main-text-color);
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 900;
   width: 50%;
-  border: 1px solid red;
+  border: 1px solid transparent;
   display: flex;
   align-items: center;
 }
 
 .nav-div-container{
-  border: 1px solid blue;
+  border: 1px solid transparent;
   height: 100%;
   width: 50%;
   display: flex;
@@ -56,31 +57,51 @@ nav{
 }
 .register-support-holder{
   width: 80%;
-  border: 1px solid red;
+  border: 1px solid transparent;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.register-support-holder div:nth-child(2){
+.signup{
   border: 1px solid #ffff;
-  height: 100%;
+  position: relative;
+  height: 70%;
   width:20%;
-  font-weight: 500;
+  font-weight: 700;
+  cursor: pointer;
   border-radius: 32px;
   margin-left: 2em;
   background-color: #ffff;
+  z-index:5;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.support{
+  font-size:1.5rem;
+  color: var(--main-text-color);
+  cursor: pointer;
+  font-weight: 700;
+  z-index: 5;
+}
+.create-account{
+  position: absolute;
+  top:0vh;
+  width: 50vw;
+  background-color: black;
+  height: 50vh;
+}
 .menubar{
-  border: 1px solid green;
+  border: 1px solid transparent;
+  height:100%;
   padding: 0.2em;
   width: 10%;
   position:relative;
   margin-left: 2em;
   cursor: pointer;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,13 +109,14 @@ nav{
 }
 
 .menubar div{
-  border: 1px solid black;
+  border: 1px solid #ffff;
   width: 50%;
   height: 3px;
   margin: 3px 0;
-  background-color: transparent;
+  background-color: #ffff;
+  z-index: 5;
 }
-.menubar div:nth-child(1){
+/* .menubar div:nth-child(1){
   position: absolute;
   top:5;
   transform:rotate(45deg)
@@ -106,7 +128,7 @@ nav{
   position: absolute;
   top: 5;
   transform:rotate(-45deg)
- }
+ } */
 
 .header_description h1{
   /* color:var(--main-text-color); */
@@ -121,5 +143,5 @@ nav{
 
 footer{
   height: 100vh;
-  background-color: aqua;
+  /* width:50vh; */
 }

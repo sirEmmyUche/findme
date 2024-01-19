@@ -22,7 +22,7 @@ function Home(){
                     <div>Drive</div>
                     <div>Electrical</div>
                     <div>Plumbering</div>
-                    <div>Groceries</div> 
+                    <div>Carpenter</div> 
                 </div>
                 <div>
                     <div>
@@ -46,12 +46,12 @@ function Home(){
                     <div>
                         <h3>Rides</h3>
                         <p>Join our ride</p>
-                        <div><img/></div>
+                        <div><img src='#' loading='lazy' /></div>
                     </div>
                     <div>
                         <h3>Delivery</h3>
                         <p>Send message anytime, anywhere</p>
-                        <div><img/></div>
+                        <div><img src='#'loading='lazy' /></div>
                     </div>
                     <div>
                         <h3>Electrical assistant</h3>

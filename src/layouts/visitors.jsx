@@ -16,11 +16,13 @@ useEffect(()=>{
 
     return( 
         <>
-            <header className="set-header" style={
-                {
-                    backgroundImage:`url(${useBackgroundImage})`,
-                }
-            }>
+            <header className="set-header" 
+            // style={
+            //     {
+            //         backgroundImage:`url(${useBackgroundImage})`,
+            //     }
+            // }
+            >
                 <Nav/>
             </header>
             <Outlet/>
