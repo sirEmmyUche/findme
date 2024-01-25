@@ -12,32 +12,69 @@ function Nav(){
                     <ul>
                         <li>
                             <Link to={'#'}>
-                                <h5>Become a driver</h5>
-                                <p>Drive and make money</p>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/driver-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Become a driver</h3>
+                                        <p>Drive and make money</p>
+                                    </div>
+                                </div>
                             </Link>
                         </li>
                         <li>
                             <Link to={'#'}>
-                                <h5>Become a dispatch rider</h5>
-                                <p>Make extra money from your ride</p>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/bike-delivery-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Become a dispatch rider</h3>
+                                        <p>Make extra money from your ride</p>
+                                    </div>
+                                </div>
+                            </Link> 
+                        </li>
+                        <li>
+                            <Link to={'#'}>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/connected-plug-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Create account as an electrician</h3>
+                                        <p>Reach out to more people </p>
+                                    </div>
+                                </div>
                             </Link>
                         </li>
                         <li>
                             <Link to={'#'}>
-                                <h5>Create account as an electrician</h5>
-                                <p>Reach out to more people </p>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/services-plumber-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Create a plumber account</h3>
+                                        <p>Let your client easily find you!</p>
+                                    </div>
+                                </div>
+                               
                             </Link>
                         </li>
                         <li>
                             <Link to={'#'}>
-                                <h5>Create a plumber account</h5>
-                                <p>Let your client easily find you!</p>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/hammer-tool-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Open an account as a carpenter</h3>
+                                        <p>Your skill is needed</p>
+                                    </div>
+                                </div>
                             </Link>
                         </li>
                         <li>
                             <Link to={'#'}>
-                                <h5>Open an account as a carpenter</h5>
-                                <p>Your skill is needed</p>
+                                <div className="reg-icon-container">
+                                    <div className="acn-reg-icon-box"><img src="/icons/checkmark-male-user-color-icon.svg"/></div>
+                                    <div className="acn-reg-type">
+                                        <h3>Sign up as a client</h3>
+                                        <p>Need to hire someone? Open an account</p>
+                                    </div>
+                                </div>
                             </Link>
                         </li>
                     </ul>
