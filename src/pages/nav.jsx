@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 function Nav(){
+    const [openSignup, setOpenSignup] = useState(false);
+
+    const toggleSignUp = ()=> setOpenSignup(!openSignup);
+
     return(
         <nav>
         <div className="logo">FindMe</div>
         <div className='nav-div-container'>
             <div className='register-support-holder'>
                 <div className="support">Support</div>
-                <div className="signup">Sign up
-                <div className="create-account">
+                <div onClick={toggleSignUp} className="signup">Sign up
+                <div className={openSignup?"create-account":"close-signup"}>
                     <ul>
                         <li>
                             <Link to={'#'}>
@@ -82,9 +87,12 @@ function Nav(){
                 </div>
             </div>
             <div className='menubar'>
-                <div></div>
-                <div></div>
-                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div className="hamburger-content">
+                    <div></div>
+                </div>
             </div>
         </div>
     </nav>

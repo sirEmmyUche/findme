@@ -65,6 +65,7 @@ nav{
   height: 10vh;
   width: 100%;
   padding: 10px;
+  border: 1px solid blue;
   background-color:transparent;
   display: flex;
   justify-content: space-between;
@@ -83,7 +84,7 @@ nav{
 }
 
 .nav-div-container{
-  border: 1px solid transparent;
+  border: 1px solid red;
   height: 100%;
   width: 50%;
   z-index: 5;
@@ -92,7 +93,7 @@ nav{
 }
 .register-support-holder{
   width: 80%;
-  border: 1px solid transparent;
+  border: 1px solid blue;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -123,6 +124,9 @@ nav{
   z-index: 5;
 }
 
+.close-signup{
+  display:none;
+}
 .create-account{
   position: absolute;
   top:8vh;
@@ -183,6 +187,7 @@ nav{
 }
 .acn-reg-type>h3{
   font-size: 1rem;
+  font-weight: 800;
   margin-bottom: 5px;
   color: var( --color--content--secondary);
 }
@@ -197,7 +202,7 @@ nav{
   height:100%;
   padding: 0.2em;
   width: 10%;
-  position:relative;
+  /* position:relative; */
   margin-left: 2em;
   cursor: pointer;
   z-index: 5;
@@ -207,7 +212,7 @@ nav{
   align-items: center;
 }
 
-.menubar div{
+.menubar span{
   border: 1px solid #ffff;
   width: 50%;
   height: 3px;
@@ -215,32 +220,30 @@ nav{
   background-color: #ffff;
   z-index: 5;
 }
-/* .menubar div:nth-child(1){
+/* .menubar span:nth-child(1){
   position: absolute;
   top:5;
   transform:rotate(45deg)
 }
-.menubar div:nth-child(2){
+.menubar span:nth-child(2){
  display:none;
  }
- .menubar div:nth-child(3){
+ .menubar span:nth-child(3){
   position: absolute;
   top: 5;
   transform:rotate(-45deg)
  } */
 
-.header_description h1{
-  /* color:var(--main-text-color); */
-  font-size: 2.5rem;
-  line-height: 3rem ;
-}
-
-/* .header_description p{
-  /* color: #ffff; 
-} 
-*/
-
-footer{
+ .hamburger-content{
+  position:absolute;
+  top:0;
+  left: 0;
+  width:100%;
   height: 100vh;
-  /* width:50vh; */
-}
+  background-color: var(--color-content-primary-inverted);
+  z-index: 6;
+ }
+
+
+
+
