@@ -1,29 +1,27 @@
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet, useParams, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Logo from '../assets/react.svg'
 import Nav from "../pages/nav";
 import Footer from "../pages/footer";
 
 function VisitorLayout(){
-    const params = useParams();
-    const [useBackgroundImage, setUseBackgroundImage] = useState('')
-useEffect(()=>{
-    if(params.name == '/'){
-        setUseBackgroundImage('/images/medium-shot-smiley-people-with-smartphone.jpg')
-    }
-},
-[params.name]
-)
-
+    const location = useLocation().pathname;
+    const [useBackgroundImage, setUseBackgroundImage] = useState('');
+    useEffect(()=>{
+        if(location == '/'){
+            setUseBackgroundImage('/images/medium-shot-smiley-people-with-smartphone.jpg')
+        }
+    },[location])
     return( 
         <>
             <header className="set-header" 
-            // style={
-            //     {
-            //         backgroundImage:`url(${useBackgroundImage})`,
-            //     }
-            // }
-            >
-                <Nav/>
+            style={
+                {
+                    // backgroundImage:`url(${'/images/medium-shot-smiley-people-with-smartphone.jpg'})`,
+                    backgroundImage:`url(${useBackgroundImage})`,
+                }
+            }>
+            <Nav/>
             </header>
             <Outlet/>
             <Footer/>

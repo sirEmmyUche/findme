@@ -3,18 +3,20 @@ import {Link} from 'react-router-dom';
 function Home(){
     return(
         <>
+           {/* <header className='home-pg-header'> */}
             <div className="header_description">
-                <h1>
-                    Find help,<br/>
-                    Anytime, Anyday, Anywhere.
-                </h1>
-                <p>
-                FindMe is the all-in-one app that provides help to you in finding a ride or a skilled artisan. 
-                Do you need a ride or a skilled artisan?<br/>
-                With FindMe, you can get the best artise for your work, ride comfortably to your destination
-                and enjoy a ride that fits your lifestyle.
-                </p>
-            </div>
+                    <h1>
+                        Find help,<br/>
+                        Anytime, Anyday, Anywhere.
+                    </h1>
+                    <p>
+                    FindMe is the all-in-one app that provides help to you in finding a ride or a skilled artisan. 
+                    Do you need a ride or a skilled artisan?<br/>
+                    With FindMe, you can get the best artise for your work, ride comfortably to your destination
+                    and enjoy a ride that fits your lifestyle.
+                    </p>
+                </div>
+           {/* </header> */}
         <main>
             <section>
                 <h1>Earn With FindMe</h1>

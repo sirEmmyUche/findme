@@ -50,10 +50,10 @@ img{
   width: 100%;
   height: auto;
 }
-.set-header{
+header{
   height: 100vh;
-  border: 1px solid black;
-  background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg');
+  border: 1px solid inherit;
+  /* background-image: url('/images/medium-shot-smiley-people-with-smartphone.jpg'); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 0 5rem;
@@ -65,7 +65,7 @@ nav{
   height: 10vh;
   width: 100%;
   padding: 10px;
-  border: 1px solid blue;
+  border: 1px solid transparent;
   background-color:transparent;
   display: flex;
   justify-content: space-between;
@@ -84,7 +84,7 @@ nav{
 }
 
 .nav-div-container{
-  border: 1px solid red;
+  border: 1px solid transparent;
   height: 100%;
   width: 50%;
   z-index: 5;
@@ -93,7 +93,7 @@ nav{
 }
 .register-support-holder{
   width: 80%;
-  border: 1px solid blue;
+  border: 1px solid transparent;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -234,16 +234,29 @@ nav{
   transform:rotate(-45deg)
  } */
 
- .hamburger-content{
+ .hamburger--box{
   position:absolute;
   top:0;
   left: 0;
-  width:100%;
+  width:100dvb;
   height: 100vh;
-  background-color: var(--color-content-primary-inverted);
-  z-index: 6;
+  padding: 30px;
+  border: 1px solid blue;
+  background-color:var(--color-bg-neutral-secondary); 
  }
-
+ .close-hamburger--box{
+  display: none;
+ }
+.hamburger-content{
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  margin: 3.5rem;
+  padding: 15px;
+  background-color: white;
+  opacity: 1;
+  display: flex;
+}
 
 
 
