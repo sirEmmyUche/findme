@@ -1,4 +1,4 @@
-function AboutUs(){
+function About(){
     return(
         <div>
             This is the about page
@@ -6,4 +6,4 @@ function AboutUs(){
     )
 }
 
-export default AboutUs
+export default About

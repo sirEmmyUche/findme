@@ -1,6 +1,5 @@
 import { Outlet, useParams, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Logo from '../assets/react.svg'
+import { useState, useEffect, Suspense } from "react";
 import Nav from "../pages/nav";
 import Footer from "../pages/footer";
 
@@ -23,7 +22,11 @@ function VisitorLayout(){
             }>
             <Nav/>
             </header>
-            <Outlet/>
+            <main>
+                <Suspense fallback={<div>Loading.....</div>}>
+                    <Outlet/>
+                </Suspense>
+            </main>
             <Footer/>
         </>
     )
