@@ -130,8 +130,9 @@ nav{
 .create-account{
   position: absolute;
   top:8vh;
-  right: 10;
+  right:0;
   width: 25vw;
+  border:1px solid transparent;
   border-radius: 25px;
   background-color:var(--main-bg-color);
   height: 80vh;
@@ -245,13 +246,12 @@ nav{
  }
 .hamburger-content{
   position: absolute;
-  top: 10vh;
-  left: 50vw;
+  top: 8vh;
+  right:0;
   border: 1px solid transparent;
   border-radius: 25px;
-  width: auto;
-  max-height: 100vh;
-  /* margin: 3.5rem; */
+  width:50%;
+  height: 100vh;
   padding: 15px;
   background-color:white;
   opacity: 1;
@@ -262,17 +262,18 @@ nav{
   margin-bottom:15px;
   font-size: 1.5rem;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
 }
-.content--first--container{
-  border: 1px solid blue;
+.content--first--container,.content--second--container{
+  border: 1px solid transparent;
   height: 100%;
+  width: 45%;
 }
 .content--first--container>ul li{
   margin: 10px;
   padding: 15px;
-  max-width: 100%;
-  border: 1px solid red;
+  width: 100%;
+  border: 1px solid transparent;
   border-radius:25px;
 }
 .content--first--container>ul li:hover{
@@ -281,6 +282,20 @@ nav{
   opacity: 1;
   transition: background-color,opacity 1s;
 }
+.content--second--container>ul li{
+  margin: 10px;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius:25px;
+}
+.content--second--container>ul li:hover{
+  border-radius: 25px;
+  background-color:var(--color-bg-neutral-secondary);
+  opacity: 1;
+  transition: background-color,opacity 1s;
+}
+
 .hamburger--ul-li-item{
   width: 100%;
   border: 1px solid transparent;
@@ -301,11 +316,29 @@ nav{
     position: absolute;
     top: 8vh;
     left: 0;
+    width: 100%;
+    height: auto;
     z-index: 10;
     display: flex;
     flex-direction: column;
   }
-  main{
-    z-index: 1;
+  .content--first--container,.content--second--container{
+    border: 1px solid transparent;
+    width: 100%;
   }
+  .testing{
+    display:none;
+  }
+  .hamburger--findme{
+    width: 80%;
+    border: 1px solid transparent;
+  }
+  /* .hamburger--findme::after{
+    content: url("/icons/thin-chevron-round-right-icon.svg");
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    display: inline-flex;
+  } */
+  
 }
