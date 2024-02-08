@@ -106,7 +106,12 @@ return(
         <div className={openhamburger?"hamburger--box":"close-hamburger--box"}>
             <div className="hamburger-content">
                 <div  className="content--first--container">
-                    <h4 className="hamburger--findme" onClick={toggleHide}>Findme</h4>
+                    <div className="findme-icon-container">
+                        <h4 className="hamburger--findme" onClick={toggleHide}>Hire a client</h4>
+                        <div className="findme-icon-box">
+                            <img src={hide?"/icons/thin-chevron-round-bottom-icon.svg":"/icons/thin-chevron-round-right-icon.svg"}/>
+                        </div>
+                    </div>
                     <ul className={hide?'testing':'content--first--container'}>
                         <li>
                             <Link to={'#'}>
@@ -166,7 +171,12 @@ return(
                     </ul>
                 </div>
                 <div className="content--second--container">
-                    <h4 className="hamburger--findme" onClick={toggleHideSecondContent}>Partner with us</h4>
+                    <div className="findme-icon-container">
+                        <h4 className="hamburger--findme" onClick={toggleHideSecondContent}>Partner with us</h4>
+                        <div className="findme-icon-box">
+                            <img src={hideSecondContent?"/icons/thin-chevron-round-bottom-icon.svg":"/icons/thin-chevron-round-right-icon.svg"}/>
+                        </div>
+                    </div>
                     <ul className={hideSecondContent?"content--second--container":"testing"}>
                     <li>
                         <Link to={'#'}>
